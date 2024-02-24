@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinnabon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    header {
+      background-color: white;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 500px;
+    }
+
+    nav {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      background-color: #ff6600;
+    }
+
+    nav a.active {
+      background-color: #ff6600;
+      color: #fff;
+      border-color: transparent;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .icon {
+      color: #ff6600;
+      font-size: 20px;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .content-anime {
+      padding: 1px;
+      background-color: #e0dcdc;
+    }
+
+    .content-anime p {
+      font-size: 40px;
+    }
+
+    .content-manga {
+      padding: 1px;
+      background-color: #e0dcdc;
+    }
+
+    .content-manga p {
+      font-size: 40px;
+    }
+
+    .content-drama {
+      padding: 1px;
+      background-color: #e0dcdc;
+    }
+
+    .content-drama p {
+      font-size: 40px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #ff884d;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: White;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ff6600;
+      font-size: 50px;
+      margin-top: auto;
+      text-align: left;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 18px;
+      text-align: left;
+
+    }
+
+    img.banner {
+      max-width: 98%;
+      max-height: 100%;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .image-and-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .anime-image {
+      max-width: 100%;
+      margin-right: 20px;
+      float: left;
+      opacity: 80%;
+    }
+
+    .text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .manga-image {
+      max-width: 100%;
+      margin-left: 20px;
+      float: right;
+      opacity: 80%;
+    }
+
+    .drama-image {
+      max-width: 100%;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      float: left;
+      opacity: 80%;
+    }
+
+    .content-anime,
+    .content-manga,
+    .content-drama {
+      margin: 20px;
+      /* Add margin to create spacing between content sections */
+      padding: 10px;
+      /* Optional: Add padding to the content sections */
+    }
+
+    .content-anime a,
+    .content-manga a,
+    .content-drama a {
+      text-decoration: none;
+      /* Remove underline */
+      color: black;
+      /* Set the default text color */
+    }
+
+    .content-anime a:hover,
+    .content-manga a:hover,
+    .content-drama a:hover {
+      color: #ff6600;
+      /* Change color on hover */
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav a {
+        margin: 10px 0;
+        display: block;
+      }
+
+      nav div {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image-and-text {
+        flex-direction: column-reverse;
+      }
+
+      .text {
+        padding: 0 20px;
+      }
+
+      .anime-image,
+      .manga-image,
+      .drama-image {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="Headerlogo.png" alt="Header">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="CinnabonAnime.html">Anime</a></li>
+      <li><a href="CinnabonManga.html">Manga</a></li>
+      <li><a href="CinnabonDrama.html">Drama</a></li>
+    </ul>
+    <div>
+      <span class="icon"><i class="fas fa-search"></i></span>
+      <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+      <span class="icon"><i class="fas fa-user"></i></span>
+    </div>
+  </nav>
+  <img src="NewBanner1.jpg" alt="Banner" class="banner">
+  <div class="content-anime">
+    <div class="image-and-text">
+      <div class="anime-image">
+        <img src="animeimage.jpg" alt="Anime Image">
+      </div>
+      <div class="text" style="padding: 0 20px;">
+        <h2>Anime</h2>
+        <p>Dive into a world of captivating stories, vibrant characters, and stunning animation with our diverse
+          collection of anime content.</p>
+        <a href="CinnabonAnime.html" style="font-size: 30px;">Explore More</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-manga">
+    <div class="image-and-text">
+      <div class="text" style="padding: 0 20px;">
+        <h2>Manga</h2>
+        <p>Explore the immersive world of manga through our extensive collection of illustrated stories, where
+          imagination knows no bounds.</p>
+        <a href="CinnabonManga.html" style="font-size: 30px;">Explore More</a>
+      </div>
+      <div class="manga-image">
+        <img src="mangabg.jpg" alt="MangaImage">
+      </div>
+    </div>
+  </div>
+  <div class="content-drama">
+    <div class="image-and-text">
+      <div class="drama-image">
+        <img src="Jdrama new.jpg" alt="DramaImage">
+      </div>
+      <div class="text" style="padding: 0 20px;">
+        <h2>Drama</h2>
+        <p>Experience the emotional depth and cultural richness of Japanese drama with our curated selection of
+          captivating stories and performances.</p>
+        <a href="CinnabonDrama.html" style="font-size: 30px;">Explore More</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2023 Cinnabon |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Service</a> |
+    <a href="#">Contact Us</a>
+  </footer>
+</body>
+
+</html>

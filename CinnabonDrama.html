@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinnabon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    header {
+      background-color: white;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 500px;
+    }
+
+    nav {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0.1px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid transparent;
+    }
+
+    nav a.active {
+      background-color: #ff6600;
+      color: #fff;
+      border-color: transparent;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      background-color: #ff6600;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .icon {
+      color: #ff6600;
+      font-size: 20px;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      padding: 1px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #ff884d;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: White;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 34px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 34px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h5 {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    img.banner {
+      max-width: 98%;
+      max-height: 100%;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .scrolling-bar {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      background-color: black;
+      margin-bottom: 20px;
+    }
+
+    .scrolling-bar img {
+      width: 150px;
+      /* Set the width of your logos */
+      height: auto;
+      margin: 0 20px;
+      /* Add spacing between logos */
+      cursor: pointer;
+      /* Add a pointer cursor to indicate clickability */
+    }
+
+    img.explore {
+      margin-left: 60px;
+      cursor: pointer;
+    }
+
+    img.figure {
+      margin-left: 110px;
+      cursor: pointer;
+    }
+
+    img.stuff {
+      margin-left: 110px;
+      cursor: pointer;
+    }
+
+    .anime-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .anime-list a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .anime-list a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .anime-item {
+      flex: 0 0 calc(20% - 20px);
+      /* 20% for 5 columns with 20px spacing */
+      margin: 20px;
+      padding: 10px;
+      border: 4px double #ff6600;
+      text-align: center;
+    }
+
+    .anime-item a {
+      color: #ff6600;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .anime-item a:hover {
+      text-decoration: underline;
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav a {
+        margin: 10px 0;
+        display: block;
+      }
+
+      nav div {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .image-and-text {
+        flex-direction: column-reverse;
+      }
+
+      .text {
+        padding: 0 20px;
+      }
+
+      .anime-image,
+      .manga-image,
+      .drama-image {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    img.shop {
+      cursor: pointer;
+      max-width: 98%;
+      max-height: 100%;
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="Headerlogo.png" alt="Header">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CinnabonAnime.html">Anime</a></li>
+      <li><a href="CinnabonManga.html">Manga</a></li>
+      <li><a href="#" class="active">Drama</a></li>
+    </ul>
+    <div>
+      <span class="icon"><i class="fas fa-search"></i></span>
+      <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+      <span class="icon"><i class="fas fa-user"></i></span>
+    </div>
+  </nav>
+  <img src="jdramabanner.png" alt="ANIBanner" class="banner">
+  <h3>J-Drama Store</h3>
+  <img src="shopdramabanner.png" alt="I1" class="shop">
+  <h4>Watch dramas</h4>
+  <h5>Coming Soon</h5>
+  <footer>
+    &copy; 2023 Cinnabon |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Service</a> |
+    <a href="#">Contact Us</a>
+  </footer>
+</body>
+
+</html>
